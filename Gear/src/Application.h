@@ -4,10 +4,26 @@
 
 namespace Gear
 {
+#define ApplicationFlagList \
+    X(ClientFinished)
+
     enum class ApplicationFlag
     {
-        ClientFinished
+#define X(x) x,
+        ApplicationFlagList
+#undef X
     };
+
+    inline const std::string& FlagToString(const ApplicationFlag flag)
+    {
+#define X(x) case ApplicationFlag::x: return  #x;
+        switch(flag)
+        {
+            ApplicationFlagList
+        default: return "Unknown";
+        }
+#undef X
+    }
 
     class Application
     {
@@ -23,7 +39,7 @@ namespace Gear
 
         static bool DefaultClientFlag();
 
-        
+
         template <typename T>
         void RegisterService() const;
         void RegisterServices() const;
@@ -33,7 +49,7 @@ namespace Gear
 
         template <typename T>
         static const Ref<T>& FromService();
-        
+
         virtual void Start() = 0;
         virtual void Update() = 0;
         virtual void Dispose() = 0;

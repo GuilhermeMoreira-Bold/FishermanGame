@@ -32,7 +32,8 @@ namespace Gear
 
     bool Application::GetFlag(const ApplicationFlag flag)
     {
-        return sInstance->mApplicationFlags[flag]();
+        const std::function<bool()>& flagFunction = sInstance->mApplicationFlags[flag];
+        GEAR_CORE_ASSERT(flagFunction, "The {} is not defined.", FlagToString(flag));
     }
 
     void Application::RegisterFlag(ApplicationFlag flag, const std::function<bool()>& flagFunction)
