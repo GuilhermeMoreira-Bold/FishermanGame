@@ -34,6 +34,8 @@ namespace Gear
     {
         const std::function<bool()>& flagFunction = sInstance->mApplicationFlags[flag];
         GEAR_CORE_ASSERT(flagFunction, "The {} is not defined.", FlagToString(flag));
+
+        return flagFunction();
     }
 
     void Application::RegisterFlag(ApplicationFlag flag, const std::function<bool()>& flagFunction)

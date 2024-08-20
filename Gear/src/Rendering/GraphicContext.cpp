@@ -29,7 +29,7 @@ namespace Gear
 
     void GraphicContext::InitOpenGLLoader()
     {
-        GEAR_CORE_ASSERT(!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress),
+        GEAR_CORE_ASSERT(gladLoadGLLoader((GLADloadproc)glfwGetProcAddress),
                          "OpenGL drivers not found.");
 
         GEAR_INFO("OpenGL drivers loaded.");
