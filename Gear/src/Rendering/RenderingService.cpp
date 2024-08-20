@@ -24,7 +24,6 @@ namespace Gear
 
     void RenderingService::Update()
     {
-        //GEAR_INFO("Updating RenderingService.");
         mGraphicContext->Clear(GL_COLOR_BUFFER_BIT);
         mGraphicContext->SwapBuffers();
         mGraphicContext->PollEvents();

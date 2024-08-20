@@ -10,7 +10,6 @@ namespace Gear
 
     void ObjectPoolService::Update()
     {
-        //GEAR_INFO("Updating Object Pool Service.");
     }
 
     void ObjectPoolService::Dispose()

@@ -1,5 +1,8 @@
 C:\Github\CPlusPlus\FishermanLife\Gear\src\Application.cpp;C:\Github\CPlusPlus\FishermanLife\bin-int\Debug-windows-x86_64\Gear\Application.obj
 C:\Github\CPlusPlus\FishermanLife\Gear\src\ApplicationService.cpp;C:\Github\CPlusPlus\FishermanLife\bin-int\Debug-windows-x86_64\Gear\ApplicationService.obj
+C:\Github\CPlusPlus\FishermanLife\Gear\src\ECS\ComponentContainer.cpp;C:\Github\CPlusPlus\FishermanLife\bin-int\Debug-windows-x86_64\Gear\ComponentContainer.obj
+C:\Github\CPlusPlus\FishermanLife\Gear\src\ECS\GameObject.cpp;C:\Github\CPlusPlus\FishermanLife\bin-int\Debug-windows-x86_64\Gear\GameObject.obj
+C:\Github\CPlusPlus\FishermanLife\Gear\src\ECS\Test\Entity.cpp;C:\Github\CPlusPlus\FishermanLife\bin-int\Debug-windows-x86_64\Gear\Entity.obj
 C:\Github\CPlusPlus\FishermanLife\Gear\src\Gear.cpp;C:\Github\CPlusPlus\FishermanLife\bin-int\Debug-windows-x86_64\Gear\Gear.obj
 C:\Github\CPlusPlus\FishermanLife\Gear\src\ObjectPoolService.cpp;C:\Github\CPlusPlus\FishermanLife\bin-int\Debug-windows-x86_64\Gear\ObjectPoolService.obj
 C:\Github\CPlusPlus\FishermanLife\Gear\src\Rendering\GraphicContext.cpp;C:\Github\CPlusPlus\FishermanLife\bin-int\Debug-windows-x86_64\Gear\GraphicContext.obj

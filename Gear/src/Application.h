@@ -14,7 +14,7 @@ namespace Gear
 #undef X
     };
 
-    inline const std::string& FlagToString(const ApplicationFlag flag)
+    inline const char* FlagToString(const ApplicationFlag flag)
     {
 #define X(x) case ApplicationFlag::x: return  #x;
         switch(flag)
